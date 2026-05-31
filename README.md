@@ -65,9 +65,6 @@ The 7Ps lens forces a complete description of the business before any critique.
 
 *Screenshot in repo — the homepage is dense, dark, and motion-heavy: three rotating carousels, a scrolling deal ticker, and neon-purple gradients. It reads like an Indian news channel's "breaking news" screen rather than a clean fintech.*
 
-![Figure 1 — Subspace homepage overview](ScreenShot/figure%201.png)
-![Figure 2 — Homepage carousel and deal ticker](ScreenShot/figure%202.png)
-![Figure 3 — Homepage neon-purple gradient layout](ScreenShot/figure%203.png)
 
 **Takeaway:** Subspace is six products inside one app. That breadth is the source of both its retention potential and three of the five problems below.
 
@@ -130,9 +127,6 @@ Porter's Five Forces, applied to derive *who* Subspace should target rather than
 
 &nbsp;
 
-![Figure 23 — Subspace Domino's gift card page (19.85% off)](ScreenShot/figure%2023.png)
-![Figure 24 — Hubble Amazon gift card page (2% off, Hubble wins)](ScreenShot/figure%2024.png)
-![Figure 25 — Subspace Pizza Hut gift card page (10.5% off, Subspace wins)](ScreenShot/figure%2025.png)
 
 **Takeaway:** Subspace wins QSR/food, Hubble wins big e-commerce. A tie on price is a loss for the smaller player, because Hubble also carries scale and a visible trust badge that Subspace lacks.
 
@@ -144,9 +138,6 @@ Porter's Five Forces, applied to derive *who* Subspace should target rather than
 
 *Screenshots in repo: the Subspace homepage, and the Shared Subscriptions list (real supply exists — Netflix, Prime, JioHotstar with dozens of active groups — but it is hidden far down the page).*
 
-![Figure 4 — Subspace homepage (first view)](ScreenShot/figure%204.png)
-![Figure 5 — Shared Subscriptions list buried below the fold](ScreenShot/figure%205.png)
-![Figure 6 — "Subscape" typo in deal ticker](ScreenShot/figure%206.png)
 
 **(b) Problem** There is no single wedge. Hubble's homepage says one thing; Subspace's says eight, and buyers remember none of them. The strongest, most defensible product is invisible while the zero-moat commodity leads. And the funnel leaks at both ends — no-login browsing means no retargeting, while the broken OTP means signups fail at the last step.
 
@@ -168,9 +159,6 @@ Porter's Five Forces, applied to derive *who* Subspace should target rather than
 
 *Screenshots in repo: the Hubble vs Subspace Amazon pages (Hubble's money-back badge vs Subspace's none), and the duplicate Pizza Hut listing.*
 
-![Figure 7 — Hubble Amazon gift card page with money-back badge](ScreenShot/figure%207.png)
-![Figure 8 — Subspace Amazon gift card page (no trust badge)](ScreenShot/figure%208.png)
-![Figure 9 — Duplicate Pizza Hut listing on Subspace](ScreenShot/figure%209.png)
 
 **(b) Problem** Subspace cannot win gift cards on price alone — a tie against a larger, more-trusted competitor is a loss. Hubble's badge is precisely why its organic Reddit reviews say things like "₹75k transaction went through smoothly"; Subspace has no comparable trust artifact to point to. And the category-killer product, Shared Subscriptions, is gated by the *same* trust gap Hubble already closed for gift cards. The visible bugs only deepen the trust deficit in a category where money changes hands.
 
@@ -200,14 +188,9 @@ Porter's Five Forces, applied to derive *who* Subspace should target rather than
 
 To be fair, there is a real strength here too: the subscription range is wide and offers both monthly and yearly tiers across YouTube Premium, Apple One, ChatGPT Plus, Spotify Duo, Microsoft 365, and Coursera — genuine depth inside the one product Subspace ships fully.
 
-![Figure 26 — Subspace subscription catalogue (monthly + yearly tiers)](ScreenShot/figure%2026.png)
 
 *Screenshots in repo: the Netflix checkout (the "May 30 2027" date and the contradictory slot count), the untranslated `quickPayments.noOptions` string on the home page, and the 5% fee price breakdown.*
 
-![Figure 10 — Netflix checkout showing "May 30 2027" renewal date](ScreenShot/figure%2010.png)
-![Figure 11 — Slot count mismatch: listing shows "2" vs checkout "0/4"](ScreenShot/figure%2011.png)
-![Figure 12 — Untranslated quickPayments.noOptions string on homepage](ScreenShot/figure%2012.png)
-![Figure 13 — 5% convenience fee price breakdown](ScreenShot/figure%2013.png)
 
 **(b) Problem** A live developer string in a money app signals that no one is watching the shop — fatal for trust. The slots mismatch makes users tell friends "Subspace lies about how full groups are." A 5% fee on a product whose entire pitch is *saving money* feels punitive. The "May 30 2027" copy, shown without explanation, is the kind of dark pattern Indian regulators have begun fining. QR-only checkout leaves an estimated 15–25% of conversion on the table. And Netflix enforcement is not hypothetical — Netflix added roughly 7 million paying users in Q4 2025 specifically by ending password sharing; India is a logical next market.
 
@@ -227,14 +210,9 @@ To be fair, there is a real strength here too: the subscription range is wide an
 
 **(a) Observed** The address geolocation prompt asks for consent correctly — but the address then persists on every page, including ones where it is irrelevant. Hindi mode is cosmetic: section headers translate, but category labels stay in English. Encouragingly, the **host chat is correctly wired into the join flow** — there is a chat icon next to "Join Group" for every host. But the chat itself is **psychologically empty**: it opens to a blank window showing a stranger's name and a default avatar, with no host greeting, no verification badge, and — critically — none of the 5.0 rating that appeared on the listing page. The trust signal vanishes exactly when the buyer needs it most. Host cards also display cryptic, unlabelled data ("Hindi 30% · Bengali 0% · Tamil 70%"), and there are no marketplace primitives at all — no host profile page, no review text, no dispute history.
 
-![Figure 27 — Address persisting on a non-delivery page](ScreenShot/figure%2027.png)
-![Figure 28 — Host card with cryptic unlabelled language data](ScreenShot/figure%2028.png)
 
 *Screenshots in repo: the chat icon on the listing (chat is wired into the flow), the empty host chat (no trust signals), and the Hindi mode page.*
 
-![Figure 14 — Chat icon on group listing (correctly wired)](ScreenShot/figure%2014.png)
-![Figure 15 — Empty host chat window with no trust signals](ScreenShot/figure%2015.png)
-![Figure 16 — Hindi mode with untranslated category labels](ScreenShot/figure%2016.png)
 
 **(b) Problem** Address persistence on irrelevant pages reads as surveillance and erodes trust. Cosmetic Hindi is a false accessibility claim that will churn the very Tier 2/3 users Subspace markets to. Above all, **the chat is the trust mechanism and it is empty** — a buyer who wants to verify a host opens a blank window, doesn't know what to say, and leaves. The infrastructure exists but cannot do its job. And without any reputation surface, a good host's track record can never compound over time.
 
@@ -255,13 +233,9 @@ To be fair, there is a real strength here too: the subscription range is wide an
 
 **(a) Observed** There are **no visible partnerships anywhere** on Subspace's web surface — no payment-gateway logo, no bank logos, no media credibility badges, no co-marketing. Yet Subspace has built real fintech infrastructure: a stored-value wallet with QR top-up, recurring-payment auto-detection, multi-product breadth, and native group payments. **None of it is exposed as a B2B or partnership API** — every primitive is locked inside the consumer app. By contrast, Hubble — a company of similar founder vintage — has already pivoted to a B2B "Rewards-as-a-Service" SDK that any consumer app can embed. My own admission captures the opportunity: *I would trust Subspace's Shared Subscriptions if Jupiter, Fi, Slice, or Razorpay endorsed it inside their app — even knowing the OTT household rules make sharing risky.* Brand-channel trust can override even known regulatory risk.
 
-![Figure 29 — Subspace homepage with zero partnership or credibility logos](ScreenShot/figure%2029.png)
-![Figure 30 — Hubble B2B Rewards SDK page (the benchmark)](ScreenShot/figure%2030.png)
 
 *Screenshot in repo: the Wallet page — the wallet infrastructure Hubble structurally lacks, buried in checkout and unexposed as a B2B asset.*
 
-![Figure 17 — Subspace Wallet page](ScreenShot/figure%2017.png)
-![Figure 18 — Wallet QR top-up flow](ScreenShot/figure%2018.png)
 
 **(b) Problem** Direct fintech customer acquisition in India runs ₹100–400 per install with 60–70% drop-off before the first transaction; at Subspace's ARPU, the unit economics break without partnership distribution. The wallet and auto-detect IP — Subspace's most defensible assets — generate no value while locked inside one app. Hubble is already monetizing the same buyer through *other* apps, while Subspace pays to fight Hubble head-on in the consumer funnel. And because the trust gap is bridgeable by brand transfer, embedded distribution is actually *faster* than fixing trust UX alone.
 
@@ -322,8 +296,6 @@ To be fair, there is a real strength here too: the subscription range is wide an
 
 *Screenshot in repo: the VocalFlow GitHub repository.*
 
-![Figure 19 — VocalFlow GitHub repository](ScreenShot/figure%2019.png)
-![Figure 20 — Vocallabs homepage agent demo](ScreenShot/figure%2020.png)
 
 **What blocks me from buying**
 
@@ -333,8 +305,6 @@ To be fair, there is a real strength here too: the subscription range is wide an
 
 *Screenshots in repo: the Vocallabs "GET STARTED" button, and the broken verify-email link.*
 
-![Figure 21 — Vocallabs "GET STARTED" button with vibe-coded styling](ScreenShot/figure%2021.png)
-![Figure 22 — Broken verify-email link (relative path with no domain)](ScreenShot/figure%2022.png)
 
 > **The disconnect:** the technology is real, but the funnel is broken. Vocallabs should fix the front door before scaling marketing — every Day-1 access request that goes unanswered is a Bolna customer.
 

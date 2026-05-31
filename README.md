@@ -1,4 +1,4 @@
-# Subspace.money — Product Teardown
+﻿# Subspace.money — Product Teardown
 
 **By Anurag Ugargol · Product Intern Assignment · 31 May 2026**
 
@@ -351,5 +351,6 @@ To be fair, there is a real strength here too: the subscription range is wide an
 
 ---
 
-*Anurag Ugargol ·* *[github.com/AnuragU03](https://github.com/AnuragU03)* *· Available full-time, open to PPO conversion*#   s u b s p a c e - t e a r d o w n - 2 0 2 6  
- 
+---
+
+*Anurag Ugargol · [github.com/AnuragU03](https://github.com/AnuragU03) · Available full-time, open to PPO conversion*
